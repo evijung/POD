@@ -2,8 +2,11 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#7f0004ff</color>
     <color name="colorError">#f05c5c</color>
     <color name="colorBGBlack">#e6a8ff</color>
     <color name="colorHintBGBlack">#b38ac3</color>
+    <color name="colorBGLayout">#787d7d7d</color>
+    <color name="colorBGLayout2">#78d3d3d3</color>
+    <color name="colorBGLayout3">#6effffff</color>
 </resources>

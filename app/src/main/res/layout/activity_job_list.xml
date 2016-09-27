@@ -1,13 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_job_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.hitachi_tstv.samsen.tunyaporn.proofpfdelivery.JobListActivity">
+    tools:context="com.hitachi_tstv.samsen.tunyaporn.proofpfdelivery.JobListActivity"
+    android:background="@drawable/bg1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBGLayout3"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/sym_def_app_icon"
+                android:id="@+id/imageView"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Name : "
+                        android:layout_width="@dimen/txt_size2"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        tools:ignore="HardcodedText,RtlHardcoded"
+                        android:gravity="right"
+                        android:textColor="@color/colorBGBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtName"
+                        tools:ignore="HardcodedText"
+                        android:textColor="@color/colorBGBlack" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Truck : "
+                        android:layout_width="@dimen/txt_size2"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4"
+                        tools:ignore="HardcodedText,RtlHardcoded"
+                        android:gravity="right"
+                        android:textColor="@color/colorBGBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txtTruck"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:textColor="@color/colorBGBlack" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText"
+            android:id="@+id/txtJob"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorBGBlack"
+            android:background="@color/colorBGLayout2"
+            android:layout_marginBottom="@dimen/mini_margin"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_marginRight="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/mini_margin" />
+
+        <ListView
+            android:layout_width="match_parent"
+            tools:ignore="NestedScrolling"
+            android:id="@+id/jobListView"
+            android:background="@color/colorBGLayout2"
+            android:layout_margin="@dimen/medium_margin"
+            android:layout_height="380dp" />
+
+        <Button
+            android:text="@string/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:gravity="center" />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -28,13 +28,16 @@ public class MainActivity extends AppCompatActivity {
     //Explicit
     private EditText userEditText, passEditText;
     private TextView errorTextView;
-    private String userString, passString;
-    private final String url = "http://service.eternity.co.th/TmsPXD/app/CenterService/getUser.php";
+    private String userString, passString, url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MyConstant myConstant = new MyConstant();
+
+        url = myConstant.getUrlJSONUser();
 
         //Bind Widget
         userEditText = (EditText) findViewById(R.id.txtUser);

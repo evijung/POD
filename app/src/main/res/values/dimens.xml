@@ -6,4 +6,8 @@
     <dimen name="txt_field_size">200dp</dimen>
     <dimen name="mini_margin">5dp</dimen>
     <dimen name="btn_size">100dp</dimen>
+    <dimen name="text_size">100dp</dimen>
+    <dimen name="txt_size2">50dp</dimen>
+    <dimen name="txt_size3">25dp</dimen>
+    <dimen name="medium_margin">10dp</dimen>
 </resources>
