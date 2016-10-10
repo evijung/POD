@@ -10,4 +10,5 @@
     <dimen name="txt_size2">50dp</dimen>
     <dimen name="txt_size3">25dp</dimen>
     <dimen name="medium_margin">10dp</dimen>
+    <dimen name="h3">15dp</dimen>
 </resources>

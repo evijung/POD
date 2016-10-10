@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".JobListActivity" />
+        <activity android:name=".JobDetailActivity"></activity>
     </application>
 
 </manifest>

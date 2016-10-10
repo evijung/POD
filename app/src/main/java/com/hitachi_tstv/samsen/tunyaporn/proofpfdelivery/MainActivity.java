@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Explicit
         private ProgressDialog progressDialog;
-        private String userString, passString, urlString;
+        private String userString, passString, urlString, nameString, idString, tidString, licenseString;
         private Boolean aBoolean;
         private Context context;
 
@@ -79,15 +79,23 @@ public class MainActivity extends AppCompatActivity {
             try {
                 JSONObject obj = new JSONObject(s);
                 aBoolean = obj.getBoolean("flag");
+                tidString = obj.getString("truckId");
+                idString = obj.getString("id");
+                licenseString = obj.getString("license");
+                nameString = obj.getString("name");
 
                 Log.d("Tag", "Boolean ==> " + aBoolean);
 
                 if (aBoolean) {
                     Intent intent = new Intent(MainActivity.this, JobListActivity.class);
                     intent.putExtra("username", userString);
+                    intent.putExtra("name", nameString);
+                    intent.putExtra("id", idString);
+                    intent.putExtra("tid", tidString);
+                    intent.putExtra("license", licenseString);
                     Toast.makeText(context, "Login Successful!!", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
-                    finish();
+                    //finish();
                 }
                 else {
                     errorTextView.setText("Invalid Username or Password!!!");
